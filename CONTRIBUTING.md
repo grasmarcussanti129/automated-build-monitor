@@ -4,7 +4,7 @@ We welcome contributions to improve the Automated Build Monitor project! Please 
 
 ## Steps to Contribute
 1. **Fork the Repository:** Click on the 'Fork' button on the upper right-hand corner of the repository page.
-2. **Create a Feature Branch:** Create a new branch for your feature or bug fix.
+2. **Create a Feature Branch:** Create a new branch for your feature or bug fix. Use a descriptive name for your branch (e.g., `fix/login-bug`).
    ```bash
    git checkout -b my-feature-branch
    ```
