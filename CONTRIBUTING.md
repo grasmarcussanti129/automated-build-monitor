@@ -11,7 +11,7 @@ We welcome contributions to improve the Automated Build Monitor project! Please 
 3. **Make Your Changes:** Implement your changes in your branch.
 4. **Commit Your Changes:** Commit your changes with a clear message.
    ```bash
-   git commit -m 'Add some feature'
+   git commit -m 'Describe the purpose of your changes'
    ```
 5. **Push to the Branch:** Push your changes to your forked repository.
    ```bash
