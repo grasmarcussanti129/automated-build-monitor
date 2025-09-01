@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.send('Automated Build Monitor is online and ready to accept connections!');
 });
 
-ii.on('connection', (socket) => {
+io.on('connection', (socket) => { // Fixed 'ii' to 'io'
     console.log('New client connected');
     socket.on('disconnect', () => {
         console.log('Client disconnected');
