@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Build Monitor</title>
+</head>
+<body>
+    <h1>Welcome to the Automated Build Monitor</h1>
+    <div id="notifications"></div>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script>
+        const socket = io();
+        socket.on('notification', (data) => {
+            const notificationsDiv = document.getElementById('notifications');
+            notificationsDiv.innerHTML += `<p>${data.message}</p>`;
+        });
+    </script>
+</body>
+</html>
