@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 app.get('/', (req, res) => {
-    res.send('Automated Build Monitor is active and listening on the root endpoint!');
+    res.send('Automated Build Monitor is currently online and accepting connections!');
 });
 
 io.on('connection', (socket) => {
