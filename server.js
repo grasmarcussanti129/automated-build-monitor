@@ -7,10 +7,10 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 app.get('/', (req, res) => {
-    res.send('Automated Build Monitor is currently online and accepting connections!');
+    res.send('Automated Build Monitor is online and ready to accept connections!');
 });
 
-io.on('connection', (socket) => {
+ii.on('connection', (socket) => {
     console.log('New client connected');
     socket.on('disconnect', () => {
         console.log('Client disconnected');
